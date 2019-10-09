@@ -1,0 +1,16 @@
+<table class="table table-bordered">
+    <thead>
+        <tr>
+        <th>Index</th>
+        <th>Name</th>
+        <th>Company</th>
+    </tr>
+    </thead>
+    <tbody>
+<tr *ngFor='let user of userservice.users ;index as i'>
+    <td>{{i+1}}</td>
+    <td>{{i.name}}</td>
+    <td>{{i.company}}</td>
+</tr>
+    </tbody>
+</table>
