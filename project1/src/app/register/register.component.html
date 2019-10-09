@@ -1,0 +1,32 @@
+<!--Creating a template Driven Form for Registration-->
+<div class="container">
+    <div class="col-md 6 offset md-3 mt-4 card card-body">
+        <!-- form name is given and at submit it goes to registerForm function     -->
+        <form #form='ngForm' (ngSubmit)='registerForm(form.value)'>
+            <legend>Register</legend>
+            <!--Providing a input field for username with Validation -->
+            <div class="form-group">
+                <label for="uname">Username</label>
+                <input type="text" class="form-control" name="uname" placeholder="Enter User Name" #uname='ngModel' ngModel required minlength="5">
+                <div *ngIf='uname.invalid && uname.touched'>
+                    <!--Providing with Validation of required and minlength -->
+                    <div class="alert alert-danger" *ngIf='uname.errors.required'>Field is Mandatory to fill</div>
+                    <div class="alert alert-danger" *ngIf='uname.errors.minlength'>Field should be of minimum length of 5 character</div>
+                </div>
+            </div>
+            <!--Providing a input field for username with Validation -->
+            <div class="form-group">
+                <label for="pwd">Password</label>
+                <input type="password" class="form-control" name="pwd" placeholder="Enter Password" #pwd='ngModel' ngModel required minlength="6">
+                <!--Providing Validation of required and minlength -->
+                <div *ngIf='pwd.invalid && pwd.touched'>
+                    <div class="alert alert-danger" *ngIf='pwd.errors.required'>Password is Mandatory to fill</div>
+                    <div class="alert alert-danger" *ngIf='pwd.errors.minlength'>Password should be of minimum length of 6 character</div>
+                </div>
+            </div>
+            <!--If the form is valid then only we can click the button -->
+            <button type="submit" class="btn btn-primary" [disabled]='form.invalid' >Submit</button>
+        </form>
+        
+    </div>
+</div>
