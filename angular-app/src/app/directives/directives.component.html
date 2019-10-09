@@ -1,0 +1,31 @@
+<!-- <ul>
+    <li *ngFor='let user of users'>{{user.name}}</li>
+</ul> -->
+
+<div class="container ">
+        <div *ngIf='condition' class="alert alert-warning alert-dismissible fade show" role="alert">
+                 User removed Successfully
+                <button type="button" (click)='refreshOver()' class="close" data-dismiss="alert" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+    <table class="table table-bordered mt-5 table-hover">
+        <thead class="thead-dark">
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Place</th>
+                <th>Delete</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor='let i of users'>
+                <td>{{i.id}}</td>
+                <td>{{i.name}}</td>
+                <td>{{i.place}}</td>
+                <td><button class="btn btn-outline-danger" (click)='removeData(i)'>Remove</button></td>
+            </tr>
+        </tbody>
+        </table>   
+</div>
+

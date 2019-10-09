@@ -1,0 +1,5 @@
+<p>master-portal works!</p>
+
+<input type="text" class="form-control mt-2 mb-2" [(ngModel)]='inputData'>
+<h1>{{dataFromSlave}}</h1>
+<app-slave-portal [dataFromMaster]='inputData' (slaveData)='dataFromSlave=$event'></app-slave-portal>

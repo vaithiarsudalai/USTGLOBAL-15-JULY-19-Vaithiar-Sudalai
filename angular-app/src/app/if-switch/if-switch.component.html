@@ -1,0 +1,13 @@
+<div *ngIf='condition; then trueBlock else falseBlock'></div>
+<ng-template #falseBlock>Condition is false</ng-template>
+<ng-template #trueBlock>Condition is true</ng-template>
+
+<div [ngSwitch]='person'>
+    <p *ngSwitchCase="'Vignesh'">Viggy</p>
+    <p *ngSwitchCase="'Aniket'">Varma</p>
+    <p *ngSwitchCase="'Varun'">Harry</p>
+    <p *ngSwitchCase="'Saurabh'">Jha</p>
+    <p *ngSwitchCase="'Vishal'">PP</p>
+    <p *ngSwitchDefault >Pvpp</p>
+
+</div>
