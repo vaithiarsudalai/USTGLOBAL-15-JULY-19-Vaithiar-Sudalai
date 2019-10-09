@@ -1,0 +1,32 @@
+<div class="container">
+    <div class="col-md-6  mt-4 ">
+        <!-- Table is created to display all the data from the service -->
+        <table class="table table-bordered table-hover">
+            <thead class="thead-dark">
+                <tr>
+                    <th>Id</th>
+                    <th>Name</th>
+                    <th>Image</th>
+                    <th>repoURL</th>
+                    <th>NodeId</th>
+                    <th>HtmlURL</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- ngFor for looping the array from view -->
+                <tr *ngFor='let u of User'>
+                    <td scope="row">{{u.id}}</td>
+                    <td>{{u.login}}</td>
+                    <td><img src="{{u.avatar_url}}"></td>
+                    <td><a href="">{{u.repos_url}}</a></td>
+                    <td>{{u.html_url}}</td>
+                    <td><a href="">{{u.html_url}}</a></td>
+                    <!-- delete button calls the function in the model -->
+                    <td><button type="button" class="btn btn-outline-danger" (click)='deleteData(u)'>Delete</button></td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+</div>
