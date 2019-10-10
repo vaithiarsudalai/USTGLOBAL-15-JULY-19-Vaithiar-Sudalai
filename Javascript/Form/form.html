@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Forms</title>
+    <style>
+    body{
+        margin-right: 50%;
+        margin-left: 25%;
+        margin-top: 15%;
+    }
+    </style>
+</head>
+<body>
+    <legend>
+<fieldset>
+
+<form action="welcome.html" method="GET">
+    <div>
+        <label for="">Username</label>
+    </div>
+    <div>
+        <input type="text" name="uname" onkeypress="validateForm()"  required>
+    </div>
+    <div>
+        <label for="">Password</label>
+    </div>
+    <div>
+        <input type="password" onkeypress="validateForm()" name="password"  required>
+    </div><br>
+    <div>
+        <input type="submit" name="loginSubmit" disabled>
+    </div>
+</form>
+
+</fieldset>
+
+
+    </legend>
+
+
+
+
+ <script src="./form.js"></script>   
+</body>
+</html>

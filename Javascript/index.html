@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JavaScript</title>
+    <script src="app.js">
+    // var actorName = 'Robert Downey Jr';
+    // console.log("Actor Name = "+actorName); 
+    // var age=50;
+    // console.log("Age = "+age);
+    // var hascharisma = true;
+    // console.log("Has Charisma = "+hascharisma);
+    // var nullData = null;
+    // console.log("Null Data = "+nullData);
+    // var address;
+    // console.log("Address = "+address);</script>
+    
+</head>
+<body>
+    <script>
+    var person;
+    person= {
+        name:'Chris Evans',
+        age : 36,
+        height :6.2,
+        getName : function(){
+            return this.name;
+        }
+    };
+    console.log("Name= "+person.name);
+    console.log("Age= "+person.age);
+    console.log("Height= "+person.height);
+    var name=person.getName();
+    console.log("Name="+name);                                      
+
+    
+    var lead=new Object();
+    lead.name='Mark Ruffalo';
+    lead.age=54;
+    lead.height=5.11;
+    console.log("Name = "+lead.name);
+    console.log("Age = "+lead.age);
+    console.log("Height = "+lead.height);
+        
+    console.log("Name = "+bike.name);
+    console.log("Price = "+bike.price);
+    console.log("CC = "+bike.cc);
+
+    var bike= new Array('Ktm','Hornet','Royal Enfield');
+    console.log(bike);
+
+    var cricketer= new Array('Sachin','Rahul','Virat');
+    console.log(cricketer);
+
+    var bicycle= new Array(5);
+    console.log(bicycle);
+    
+    
+    for(var i=0;i<bike.length;i++)
+    {
+        console.log(bike[i]);
+    }
+
+    </script>
+</body>
+</html>

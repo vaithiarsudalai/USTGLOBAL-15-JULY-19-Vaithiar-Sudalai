@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form 1</title>
+    <link rel="stylesheet" href="./form101.css">
+</head>
+<body>
+    
+<fieldset>
+    <form onsubmit="validateForm1()" action="welcome1.html" method="get">
+        <div>
+            <label for="">First Name</label><br>
+            <input onkeyup="validateForm1()" type="text" name="fname" required>
+        </div>
+        <div>
+            <label for="">Last Name</label><br>
+            <input onkeyup="validateForm1()" type="text" name="lname" required>
+        </div>
+        <div>
+            <label for="">Company Name</label><br>
+            <input onkeypress="validateForm1()" type="text" name="cname" required>
+        </div>
+        <div>
+            <label for="">Emp ID</label><br>
+            <input onkeyup="validateForm1()" type="number" name="empid" required>
+        </div>
+        <div>
+            <label for="">Date of Joining</label><br>
+            <input onkeypress="validateForm1()" type="date" name="doj" required>
+        </div>
+        <div>
+            <label for="">Gender</label><br>
+            <input onkeypress="validateForm1()" type="radio" name="gender" id="male" >Male
+            <input onkeypress="validateForm1()" type="radio" name="gender" id="female">Female
+            <input onkeypress="validateForm1()" type="radio" name="gender" id="other">others
+        </div>
+        <div>
+            <label for="">Skills</label><br>
+            <input type="checkbox" name="skill" id="">Java<br>
+            <input type="checkbox" name="skill" id="">Sql<br>
+            <input type="checkbox" name="skill" id="">J2EE<br>
+            <input type="checkbox" name="skill" id="">Hibernate<br>
+        </div>
+        <div id="rightshift">
+        <input type="submit" name="loginInSubmit" value="submit" disabled>
+        <input type="reset" value="reset">
+        </div>
+    </form>
+</fieldset>
+    <script src="./form101.js"></script>
+</body>
+</html>

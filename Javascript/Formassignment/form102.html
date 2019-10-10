@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form 2</title>
+    <link rel="stylesheet" href="./form102.css">
+</head>
+<body>
+     <h1>Customer Details:</h1>
+     <br>
+     <hr>
+        <form onsubmit="validateForm2()" action="welcome1.html" method="get">
+                
+                    <label for="">Full Name</label><label style="color:red;">*</label><br>
+                    <span>
+                        <input type="text" onkeyup="validateForm2()" class="dvi" name="finame" required>
+                        <input type="text" class="dvi" onkeyup="validateForm2()" name="laname" required >
+                    </span>
+                    <span id="mon">First Name</span>
+                    <span id="day">Last Name</span>
+                    <div style="margin-top: 10px;"></div>
+
+                    <label for="">Address</label><label style="color:red;">*</label><br>
+                    <span>
+                        <input type="text" onkeyup="validateForm2()" class="dvi" name="add1" size="50" required><br>
+                        <span id="mon">Street Address</span>
+                        <input type="text" class="dvi" onkeyup="validateForm2()" name="add2" size="50"  style="margin-top:10px; " required>
+                        <span id="mon">Street Address Line2</span>
+                    </span>
+
+                    <div style="margin-top: 10px;"></div>
+                    <span>
+                        <input type="text" onkeyup="validateForm2()" class="dvi" name="city" required>
+                        <input type="text" class="dvi" onkeyup="validateForm2()" name="state" required >
+                    </span>
+                    <span id="mon">City</span>
+                    <span id="day">State / Province </span>
+                    <div style="margin-top: 10px;"></div>
+
+                    <span>
+                        <input type="text" onkeyup="validateForm2()" class="dvi" name="zip" required>
+                        <select name="country" id="co" >
+                            <option value="coun" selected disabled>Please Select</option>
+                            <option value="coun">India</option>
+                            <option value="coun">Australia</option>
+                            <option value="coun">England</option>
+                            <option value="coun">Nepal</option>
+                            <option value="coun">USA</option>
+                            <option value="coun">Saudi Arabia</option>
+                        </select>
+                        </span>
+                        <span id="mon">Postal</span>
+                        <span id="day">Country</span><br>
+<input type="submit" name="logSubmit" value="Submit" disabled>
+
+
+                
+            </form>
+
+    <script src="./form102.js"></script>
+</body>
+</html>

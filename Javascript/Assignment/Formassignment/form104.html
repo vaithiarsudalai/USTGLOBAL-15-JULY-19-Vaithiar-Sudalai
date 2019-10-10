@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form 4</title>
+    <style>
+        body{
+        margin-left:25%;
+        margin-right: 50%;
+        margin-top: 10%;
+            }    
+            </style>
+</head>
+<body>
+    <fieldset>
+    <form action="welcome1.html" method="get" onsubmit="validateForm10()">
+<div id="div1">
+         <label for="uname">Username</label>
+        <input onkeypress="validateForm10()" type="text" name="uname" id="uname"><br>
+        <div id="err1"></div>
+        
+    </div><br>
+    <div id="div2">
+         <label for="">Password</label>
+        <input onkeypress="validateForm10()" type="password" name="pass" id="pass"><span onclick="showPass()" id="p3">show</span><br>
+        <div id="err2"></div>
+        
+    </div><br>
+    <div>
+        <input type="submit" name="logSubmit"  value="Submit" disabled>
+    </div>
+    </form>
+</fieldset>
+<script src="./form104.js"></script>
+</body>
+</html>
