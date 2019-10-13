@@ -15,7 +15,7 @@ export class TaskService {
   }
 
   getData(){
-    return this.http.get('http://localhost:8083/task/get-all').subscribe(resData =>{
+    return this.http.get<any>('http://localhost:8083/task/get-all').subscribe(resData =>{
       console.log(resData);
       this.taskInfo = resData.taskList;
       console.log(this.taskInfo);
